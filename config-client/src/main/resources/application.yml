@@ -1,0 +1,7 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+
+  # 会通过 config-server 获取指定的 http://xxx/config-repo.git 下的 demo1.yml
+  application:
+    name: demo1
